@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Right to Forget Request</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+<body>
+ 
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        
+
+  <div class="container">
+    <h1>Right to Forget Request</h1>
+   
+     <form id="requestForm" action="/forget" method="post" ">
+
+      <div class="form-group">
+
+        <div class="form-group">
+          <label for="company">Your Name:</label>
+          <input type="text" class="form-control" id="sender_name" name="sender_name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Your Google Email:</label>
+          <input type="text" class="form-control" id="sender_email" name="sender_email" required>
+        </div>
+
+      <div class="form-group">
+        <label for="company">Company Name:</label>
+        <input type="text" class="form-control" id="company" name="company" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Company Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+    <div id="response"></div>
+  </div>
+
+  <script src="{{ script_url }}"></script>
+  <!-- Add the Google Sign-In API script -->
+ 
+  <!-- Bootstrap requires some JavaScript, so add the following at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
